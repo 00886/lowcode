@@ -1,0 +1,24 @@
+{
+  "name": "@lowcode/share",
+  "type": "module",
+  "description": "",
+  "exports": {
+    ".": {
+      "import": "./build/index.mjs",
+      "require": "./build/index.cjs"
+    }
+  },
+  "main": "./build/index.cjs",
+  "module": "./build/index.mjs",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "dependencies": {
+    "unbuild": "^3.6.1"
+  }
+}
